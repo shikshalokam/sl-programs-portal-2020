@@ -1,0 +1,11 @@
+.carddata{
+    width: 360px;
+    height:360px;
+}
+
+.roundimg{
+    font-size: 10em;
+    background: antiquewhite;
+    border-radius: 50%;
+    padding: 0.3em;
+}

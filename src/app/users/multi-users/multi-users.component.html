@@ -1,0 +1,95 @@
+<!-- <div class="dashboard-content">
+    <div class="table-header">
+        <h4 class="list-title" style="text-align: center;">Users</h4>
+        <div class="table-header-right">
+
+        </div>
+    </div>
+    <div class="box ">
+        <div class="table-responsive main-table">
+            <p-table [value]="users" sortMode="multiple" [paginator]="true" [rows]="3">
+                <ng-template pTemplate="caption">
+                    Users List
+                </ng-template>
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th *ngFor="let col of cols" [pSortableColumn]="col.field">
+                            {{col.header}}
+                            <p-sortIcon [field]="col.field" ariaLabel="Activate to sort"
+                                ariaLabelDesc="Activate to sort in descending order"
+                                ariaLabelAsc="Activate to sort in ascending order"></p-sortIcon>
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-user>
+                    <tr>
+                        <td>{{user.id}}</td>
+                        <td>{{user.name}}</td>
+                        <td>{{user.email}}</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="dashboard-content">
+    <div>
+        <div>
+            <h5 class="title" id="exampleModalLabel">Create Multiple User ID's</h5>
+        </div>
+        <div>
+            <p class="dfile">Kindly Download the excel file to create multiple id's </p>
+            <div class="download">
+                <a (click)="singleuser()">Download File Here</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="margin-top: 7%;">
+                <span class="dashboard-icon ">
+                    <i class="pi pi-users roundimg"></i>
+                    <h3 class="ftitle">Users Creation</h3>
+                </span>
+            </div>
+            <div class="col-md-2">
+
+
+            </div>
+
+            <div class="col-md-4" style="margin-top: 2%;">
+               
+                <p-card class="carddata" [style]="{height: '320px',width: '460px', background: '#D6D6D6' }">
+                        <div class="dropzone">
+                                <input type="file" #fileDropRef (change) ="filesBrowse($event.target.files)" id="fileDropRef" multiple/>
+                                <span style="font-size: 3em;">
+                                        <i class="pi pi-cloud-upload"></i>
+                                    </span>
+                                <h3>Drag and Drop files here</h3>
+                                <h3>or</h3>
+                                <label for ="fileDropRef">Browse files</label>
+                            </div>
+                    <!-- <div class="g-company-icon" data-toggle="modal" data-target="#exampleModal"
+                        style="cursor: pointer;">
+                        <span class="dashboard-icon ">
+                            <i class="pi pi-users roundimg"></i>
+                        </span>
+                    </div> -->
+                    <!-- <div class="g-title" data-toggle="modal" data-target="#exampleModal" (click)="singleuser()">
+                        <a (click)="singleuser()">Create Multiple users</a>
+                    </div> -->
+                </p-card>
+                <!-- <div style="text-align: center; margin-top: 10%;">
+                    <button class="primary1">Create</button>
+                </div> -->
+                <div class="multiuserc" style="width:35%;margin-top: 10%;">
+                        <a (click)="singleuser()">Create</a>
+                    </div>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+    </div>
+</div>
