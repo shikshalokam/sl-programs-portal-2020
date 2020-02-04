@@ -1,0 +1,56 @@
+<p-toast [style]="{marginTop: '80px'}"></p-toast>
+<div class="dashboard-content">
+    <!-- <div class="box mt-2 mt-md-2 mt-sm-2 mt-lg-5 mt-xl-5"> -->
+    <div class="row" style="margin-top: 5%;">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+            <p-card [style]="{height: '360px',width: '360px'}" class="carddata">
+                <div class="g-company-icon" data-toggle="modal" data-target="#exampleModal">
+                    <span class="dashboard-icon ">
+                        <i class="pi pi-user roundimg"></i>
+                    </span>
+                    <!-- <img (click)="singleuser()" class="roundimg" width="50%" src="../../assets/images/employee-icon.png" alt="company icon" /> -->
+                </div>
+                <div class="g-title">
+                    <a (click)="singleuser()">Create Single user</a>
+                </div>
+            </p-card>
+        </div>
+        <!-- <div class="global-company">
+                <div class="g-company-icon" data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;">
+                    <img (click)="singleuser()" src="../../assets/images/employee-icon.png" alt="company icon" /></div>
+                <div class="g-title"  data-toggle="modal" data-target="#exampleModal" (click)="singleuser()">
+                   <a (click)="singleuser()">Create Single user</a> 
+                </div>
+               
+
+            </div> -->
+        <div class="col-md-4">
+            <p-card class="carddata" [style]="{height: '360px',width: '360px'}">
+                <div class="g-company-icon" data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;">
+                    <span class="dashboard-icon ">
+                        <i class="pi pi-users roundimg"></i>
+                    </span>
+                </div>
+                <div class="g-title" data-toggle="modal" data-target="#exampleModal" (click)="singleuser()">
+                    <a (click)="multiuser()">Create Multiple users</a>
+                </div>
+            </p-card>
+        </div>
+        <div class="col-md-2">
+            </div>
+
+        <!-- <div class="global-employee">
+                <div class="g-company-icon"><img src="../../assets/images/company-icon.png" alt="employee icon" />
+                </div>
+                <div class="g-title">
+                    Create Multiple users
+                </div>
+
+            </div> -->
+
+    </div>
+
+    <!-- </div> -->
+</div>
