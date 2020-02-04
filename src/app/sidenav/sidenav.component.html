@@ -1,0 +1,54 @@
+<div class="p-col-12 p-md-6 p-lg-3">
+    <!-- <p-panelMenu [model]="items" [style]="{'width':'300px'}"></p-panelMenu> -->
+    <!-- <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+       
+        <h1 style="font-weight:normal">Left Sidebar</h1>
+        <button pButton type="button" routerLink="/login" (click)="passdata()" label="Save" class="ui-button-success">save</button>
+        <button pButton type="button" (click)="visibleSidebar1 = true" label="Cancel"
+            class="ui-button-secondary"></button>
+    </p-sidebar> -->
+
+</div>
+
+
+<div class="sidebar" id="sidebar">
+    <div class="logo d-none d-md-none d-lg-block d-xl-block">
+      <a href="#"><img src="../../assets/images/shikshalokam.png" alt="logo" /></a>
+    </div>
+    <div class="sidebar-menu">
+      <h6 class="menu-title"></h6>
+      <ul>
+        <li><a [routerLink]="['/user/user']" class="active">
+            <span class="dashboard-icon">
+                <i class="pi pi-user"></i>
+            </span>
+            User</a>
+        </li>
+  
+        <li><a [routerLink]="['/user/multi']" class="active">
+            <span class="dashboard-icon">
+                <i class="pi pi-users"></i>
+            </span>
+            Multiple users</a>
+        </li>
+
+        <li><a [routerLink]="['/user/multi']" class="active">
+          <span class="dashboard-icon">
+              <i class="pi pi-bell"></i>
+          </span>
+          Notifications</a>
+      </li>
+  
+
+      <li><a [routerLink]="['/user/multi']" class="active">
+        <span class="dashboard-icon">
+            <i class="pi pi-refresh"></i>
+        </span>
+        History</a>
+    </li>
+
+    
+  
+      </ul>
+    </div>
+  </div>
